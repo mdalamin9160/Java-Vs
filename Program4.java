@@ -1,11 +1,8 @@
 class Array {
-    public static void main(String[] args) {
-        int num[] [] = new int[3][4];
-        for(int i = 0; i<3; i++){
-            for(int j=0; j<4; j++){
-                System.err.print(num[i][j] + " ");
-            }
-            System.err.println();
-        }
+    public static void main(String[] args){
+        int a = 10;
+        int b = 5;
+        int sum = a + b; 
+        System.out.println(sum);
     }
 }
