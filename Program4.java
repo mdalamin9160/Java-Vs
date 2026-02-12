@@ -1,8 +1,11 @@
 class Array {
     public static void main(String[] args) {
-        int[] a = {1,5,8,9,3,2};
-        for(int i = 0; i<6; i++) {
-            System.err.println(a[i]);
+        int num[] [] = new int[3][4];
+        for(int i = 0; i<3; i++){
+            for(int j=0; j<4; j++){
+                System.err.print(num[i][j] + " ");
+            }
+            System.err.println();
         }
     }
 }
