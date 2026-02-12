@@ -1,10 +1,10 @@
 class Array {
     public static void main(String[] args){
-        int a = 10;
-        int b = 3;
-        System.out.println(a > b);   // true
-        System.out.println(a == b);  // false
-        System.out.println(a != b);  // true
+        int age = 20;
+        boolean hasId = true;
+        System.out.println(age > 18 && hasId);  // true
+        System.out.println(age < 18 || hasId);  // true
+        System.out.println(!hasId);             // false
 
     }
 }
