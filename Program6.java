@@ -1,8 +1,29 @@
-class ALamin {
+class Animal {
+    void sound() {
+        System.out.println("Some sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Meow");
+    }
+}
+
+public class Program6 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int sum = a + b;
-        System.out.println("The sum of " + a + " and " + b + " is: " + sum);
+        Animal a1 = new Dog();
+        Animal a2 = new Cat();
+
+        a1.sound();  // Bark
+        a2.sound();  // Meow
     }
 }
