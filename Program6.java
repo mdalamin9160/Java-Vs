@@ -1,24 +1,13 @@
-class Person {
+class Car {
 
-    private String name;
-
-    void setName(String n) {
-        name = n;
-    }
-
-    String getName() {
-        return name;
+    public void start() {
+        System.out.println("Car started");
     }
 }
 
-public class Program6 {
+class Program3 {
     public static void main(String[] args) {
-
-        Person p = new Person();
-
-        // p.name = "Ali"; ❌ ERROR (private)
-
-        p.setName("Ali");
-        System.out.println(p.getName());
+        Car c = new Car();
+        c.start();  // accessible anywhere
     }
 }
