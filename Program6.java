@@ -1,13 +1,21 @@
-class Car {
-
-    public void start() {
-        System.out.println("Car started");
-    }
+enum Day {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY
 }
 
-class Program3 {
+public class Program6 {
     public static void main(String[] args) {
-        Car c = new Car();
-        c.start();  // accessible anywhere
+
+        Day today = Day.MONDAY;
+
+        System.out.println(today);
+
+        if (today == Day.WEDNESDAY) {
+            System.out.println("Start of week");
+        }
+        else {
+            System.out.println("Not start of week");
+        }
     }
 }
