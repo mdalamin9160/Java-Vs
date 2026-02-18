@@ -53,6 +53,8 @@ class PrintAllPaths {
         int src = 0;
         int tar = 5;
         boolean vis[] = new boolean[V];
+        vis[src] = true;
+        printAllPaths(graph, src, tar, src+"", vis);
 
     }
 }
