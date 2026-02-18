@@ -1,5 +1,5 @@
 import java.util.*;
-public class DFS {
+class DFS {
     static class Edge {
         int src;
         int dest;
@@ -51,5 +51,10 @@ public class DFS {
 \ | /
 2 ---- 4
 */
+        int V = 7;
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        createGraph(graph);
+        boolean visited[] = new boolean[V];
+        dfs(graph, 0, visited);
     }
 }
