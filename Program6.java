@@ -1,21 +1,20 @@
-enum Day {
-    MONDAY,
-    TUESDAY,
-    WEDNESDAY
-}
+package com.example;
+
+import java.util.Scanner;
 
 public class Program6 {
+
     public static void main(String[] args) {
 
-        Day today = Day.MONDAY;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println(today);
+        double value = 10.7;
+        int x = (int) value;  // type casting
 
-        if (today == Day.WEDNESDAY) {
-            System.out.println("Start of week");
-        }
-        else {
-            System.out.println("Not start of week");
-        }
+        System.out.println("Enter number:");
+        int input = sc.nextInt();
+
+        System.out.println("Cast value: " + x);
+        System.out.println("Input: " + input);
     }
 }
