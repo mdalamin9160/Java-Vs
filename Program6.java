@@ -1,20 +1,18 @@
-package com.example;
+class Outer {
 
-import java.util.Scanner;
+    class Inner {
+        void display() {
+            System.out.println("Inner class method");
+        }
+    }
+}
 
-public class Program6 {
-
+class Test {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Outer outer = new Outer();
+        Outer.Inner inner = outer.new Inner();
 
-        double value = 10.7;
-        int x = (int) value;  // type casting
-
-        System.out.println("Enter number:");
-        int input = sc.nextInt();
-
-        System.out.println("Cast value: " + x);
-        System.out.println("Input: " + input);
+        inner.display();
     }
 }
