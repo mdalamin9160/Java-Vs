@@ -1,24 +1,25 @@
-class BankAccount {
+class Student {
 
-    private double balance;  // hidden data
+    String name;
+    int age;
 
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-        }
+    // Constructor
+    Student(String n, int a) {
+        name = n;
+        age = a;
     }
 
-    public double getBalance() {
-        return balance;
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
     }
 }
 
 public class Program7 {
     public static void main(String[] args) {
 
-        BankAccount acc = new BankAccount();
+        Student s1 = new Student("Ali", 20);
 
-        acc.deposit(500);
-        System.out.println(acc.getBalance());
+        s1.display();
     }
 }
