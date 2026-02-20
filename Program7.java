@@ -1,25 +1,15 @@
-class Student {
-
-    String name;
-    int age;
-
-    // Constructor
-    Student(String n, int a) {
-        name = n;
-        age = a;
-    }
-
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
-}
-
 public class Program7 {
     public static void main(String[] args) {
 
-        Student s1 = new Student("Ali", 20);
+        try {
+            int a = 10;
+            int b = 0;
+            int result = a / b;
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }
 
-        s1.display();
+        System.out.println("Program continues...");
     }
 }
