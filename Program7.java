@@ -1,6 +1,6 @@
-class age {
+class pi {
+    static final double pi = 3.14;
     public static void main(String[] args) {
-        final int age = 20;
-        System.out.println(age);
+        System.out.println(pi);
     }
 }
