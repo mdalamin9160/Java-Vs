@@ -1,15 +1,18 @@
-public class Program7 {
-
-    public static void checkAge(int age) {
-
-        if (age < 18) {
-            throw new ArithmeticException("Not eligible");
-        }
-
-        System.out.println("Eligible");
+class Student {
+    String name;
+    static String school = "ABC School";
+    Student(String name){
+        this.name = name;
     }
-
+    void display(){
+        System.out.println(name + " studies at " + school);
+    }
+}
+public class Program7 {
     public static void main(String[] args) {
-        checkAge(15);
+        Student s1 = new Student("Alice");
+        Student s2 = new Student("Bob");
+        s1.display();
+        s2.display();
     }
 }
