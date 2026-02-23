@@ -3,6 +3,6 @@ class Program5 {
         String name = "Alamin";
         System.out.println(name instanceof String);  
         System.out.println();
-
+        
     }
 }
