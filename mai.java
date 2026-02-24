@@ -1,7 +1,11 @@
+interface m {
+    void show();
+}
 public class mai {
-   public  static void main(String[] args) {
-       StringBuilder s = new StringBuilder("Hello");
-       s.append(" World");
-       System.out.println(s);
-   }
+    public static void main(String[] args) {
+        m my = () -> {
+            System.out.println("Hello World");
+        };
+        my.show();
+    }
 }
