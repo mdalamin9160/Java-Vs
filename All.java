@@ -1,13 +1,14 @@
-
-import java.util.Scanner;
-
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class All{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter name: ");
-        String name = sc.nextLine();
-        System.out.println("Name: "+name);
-
-        
+    BufferedReader  br = new BufferedReader(new InputStreamReader((System.in)));
+    System.out.println("Enter name: ");
+    String name = br.readLine();
+    System.out.println("Enter age");
+    int age = Integer.parseInt(br.readLine());
+    System.out.println(name);
+    System.out.println(age);
     }
 }
