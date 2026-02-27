@@ -5,7 +5,9 @@ import java.io.InputStreamReader;
 public class All {
     public static void main(String[] args) throws IOException {
 
-
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in)
+        );
         @Override
         System.out.println("Enter name: ");
         String name = br.readLine();
