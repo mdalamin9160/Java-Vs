@@ -7,7 +7,8 @@ public class All {
 
         BufferedReader br = new BufferedReader(
                 new InputStreamReader(System.in)
-        );
+        ):
+        System.out.println(br);
         System.out.println("Enter name: ");
         String name = br.readLine();
 
