@@ -77,6 +77,5 @@ public class Program6 {
 
         // Displaying account information
         bank.displayAccountInfo("101");
-        bank.displayAccountInfo("102");
     }
 }
