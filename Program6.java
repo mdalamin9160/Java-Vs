@@ -76,6 +76,5 @@ public class Program6 {
         bank.performTransaction("103", 200.0); // This account doesn't exist
 
         // Displaying account information
-        bank.displayAccountInfo("101");
     }
 }
