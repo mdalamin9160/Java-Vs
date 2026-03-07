@@ -68,8 +68,7 @@ public class Program6 {
     public static void main(String[] args) {
         Bank bank = new Bank();
 
-        // Adding a few accounts
-        bank.addAccount("101", "John Doe", 1000.0);
+        // Adding a few account
         bank.addAccount("102", "Jane Smith", 1500.0);
 
         // Performing transactions
