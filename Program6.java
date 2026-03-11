@@ -68,7 +68,7 @@ public class Program6 {
 
 
         // Adding a few account
-        bank.addAccount("102", "Jane Smith", 1500.0);
+
 
         // Performing transactions
         bank.performTransaction("101", 500.0);
