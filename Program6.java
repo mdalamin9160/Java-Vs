@@ -71,7 +71,6 @@ public class Program6 {
         bank.addAccount("102", "Jane Smith", 1500.0);
 
         // Performing transactions
-        bank.performTransaction("101", 500.0);
         bank.performTransaction("103", 200.0); // This account doesn't exist
 
         // Displaying account information
