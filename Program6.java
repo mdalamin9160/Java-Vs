@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 class Bank {
-    private Map<String, Account> accounts;
+     Map<String, Account> accounts;
 
     public Bank() {
         this.accounts = new HashMap<>();
